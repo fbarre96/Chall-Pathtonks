@@ -1,0 +1,40 @@
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Fri, 29 Oct 2021 13:18:48 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Length: 502
+
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlZmJmNWYyYy0yY2ZlLTRlZDgtYTJmMS1mMGUzYTdlMzNjZjciLCJzdWIiOiIzZDM1Y2UyYi0xZjlhLTQwZWMtOGMzZS1iNWRlZjk0ZmE2OWEiLCJpYXQiOiI2Mzc3MTExMDMyODU4NjI3NzYiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjExMTEwLyIsImV4cCI6MTYzNjExODMyOCwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjpbIlRlYWNoZXIiLCJBcHBVc2VyIl0sImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6MTExMTAvIn0._FvKlw7p7talDHdZVwEHOFWA5UJLjijzwZdKyRV90Tc","roles":["Teacher","AppUser"]}
+
+x
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Fri, 29 Oct 2021 13:20:51 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Length: 62
+
+{"valid":true,"userId":"3d35ce2b-1f9a-40ec-8c3e-b5def94fa69a"}
+
+
+00366a64-ac5c-4213-a5eb-936278172ce4
+
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Fri, 29 Oct 2021 13:21:15 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Length: 164
+
+[{"id":"3d35ce2b-1f9a-40ec-8c3e-b5def94fa69a","firstName":"Enseignant","lastName":"8","academy":"Toulouse","promotion":2021,"email":"enseignant_08@clevvgarde.com"}]
