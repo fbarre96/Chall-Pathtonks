@@ -1,12 +1,89 @@
-<html>
-   <body>
-      <form action = "/AwesomeAdm1nR0ute/uploader" method = "POST" 
-         enctype = "multipart/form-data">
-         <label>Secret:</label>
-         <input type = "text" name = "secret" />
-         <br \>
-         <input type = "file" name = "file" />
-         <input type = "submit"/>
-      </form>   
-   </body>
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+	<title>PathTonks</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+    <!-- Animate.css -->
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/animate.css') }}">
+	
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/magnific-popup.css') }}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.css') }}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/icomoon.css') }}">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+
+	<!-- Modernizr JS -->
+	<script src="{{ url_for('static',filename='js/modernizr-2.6.2.min.js') }}"></script>
+    </head>
+    <body>
+        <div id="fh5co-wrap">
+            <header id="fh5co-header">
+                <div class="container">
+                    <nav class="fh5co-main-nav">
+                        <ul>
+                            <li><a href="/"><span>Home</span></a></li>
+                            <li><a href="/tonks"><span>Tonks</span></a></li>
+                            <li class="fh5co-active"><a href="#"><span>Upload</span></a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+    
+            <div class="fh5co-hero" style="background-image: url({{ url_for('static',filename='images/stonks.jpg') }});" data-stellar-background-ratio="0.5">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+                            <div class="fh5co-intro fh5co-table-cell">
+                                <h1 class="text-center">STONKS ! </h1>
+                                <p>How did you get here ???</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    
+            <div class="fh5co-parallax" style="background-image: url(images/hero_2.jpg);" data-stellar-background-ratio="0.5">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+                            <div class="fh5co-intro fh5co-table-cell">
+
+                              <p>I wonder if there are other forms of dark magic going on here</p>
+                              <form action = "/AwesomeAdm1nR0ute/uploader" method = "POST" 
+                              enctype = "multipart/form-data">
+                              <label>Secret:</label>
+                              <input type = "text" name = "secret" />
+                              <br \>
+                              <input type = "file" name = "file" />
+                              <input type = "submit"/>
+                           </form>   
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <!-- jQuery -->
+        <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+        <!-- jQuery Easing -->
+        <script src="{{ url_for('static',filename='js/jquery.easing.1.3.js') }}"></script>
+        <!-- Bootstrap -->
+        <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+        <!-- Waypoints -->
+        <script src="{{ url_for('static',filename='js/jquery.waypoints.min.js') }}"></script>
+        <!-- Stellar -->
+        <script src="{{ url_for('static',filename='js/jquery.stellar.min.js') }}"></script>
+        <!-- MAIN JS -->
+        <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+    </body>
 </html>
