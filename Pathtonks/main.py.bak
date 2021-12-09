@@ -53,7 +53,7 @@ def download():
     if filepath.startswith("C:\\"):
         return render_template("400.html", e="What are you even trying darklord?"), 400
     # filepath must not end by 'y' nor '.' to prevent downloading main.py and not end with a / or \ to avoid directory download
-    if not re.match(r"[a-zA-Z\./\\]+[^y\\/\s\.]$", filepath):
+    if not re.match(r"[a-zA-Z\./\\]+[^yY\\/\s\.]$", filepath):
         return render_template("400.html", e=  "The given filepath does not end with a valid file name"), 400
     # This should prevent path traversal :
     filename = os.path.normpath(os.path.basename(filepath))
