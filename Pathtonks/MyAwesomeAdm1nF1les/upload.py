@@ -23,7 +23,7 @@ def upload_file():
      full_path = os.path.join(dir_path, upload_dir, filename)
      if dir_path not in full_path:
           return render_template("400.html", e= "Restricted to "+dir_path), 400
-     if "main.py" in filename or "upload.py"  in filename:
+     if "main.py" in filename.lower() or "upload.py"  in filename.lower():
           return render_template("400.html", e= "I dunno how but you should not be able to replace those."), 400
      f.save(full_path)
      return 'file uploaded successfully in '+full_path
